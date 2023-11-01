@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block start %}
+<div class="container">
+    <h1>Get your short urls:</h1>
+    <div class="container col-9 mx-auto card shadow-lg p-5 mt-2">
+    <form action="/create" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <center><button type='submit' class="btn btn-outline-info">create</button></center>
+    </form>
+    </div>    
+
+</div>
+    {% endblock  %}

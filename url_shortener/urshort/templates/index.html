@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block start %}
+<div class="contanier d-flex flex-column justify-content-center align-items-center" style="background-color: rgb(239, 237, 238); height:90vh">
+<div class="jumbotron"><center><h1>Get short url</h1>
+<a href='/create'><button class="btn btn-primary">create</button></a>
+
+</center>
+</div>
+<div class="jumbtron"><center><h1>See all the urls</h1>
+    <a href='/display'><button class="btn btn-primary">see</button></a>
+    
+    </center>
+</div>
+
+<div class="jumbtron"><center><h1>Go to the original url</h1>
+    <a href='/long'><button class="btn btn-primary">GO</button></a>
+    
+    </center>
+</div>
+</div>
+    {% endblock  %}
